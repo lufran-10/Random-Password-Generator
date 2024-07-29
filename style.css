@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap");
+/* font-family: "Noto Sans", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #483d3f;
+  color: #fff;
+  padding-left: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.container h1 span {
+  color: #058ed9;
+  border-bottom: 4px solid #058ed9;
+  padding-bottom: 7px;
+  display: block;
+  width: fit-content;
+}
+
+.display {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px;
+  border-radius: 5px;
+}
+
+.display input {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.display .copy-btn {
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.display .copy-btn:hover {
+  background: #e6e6e6;
+}
+
+.display .copy-btn:active {
+  background: #c9c9c9;
+}
+
+.display .copy-btn img {
+  width: 40px;
+}
+
+.container .generate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #058ed9;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 16px 26px;
+  cursor: pointer;
+}
+
+.container .generate-btn:hover {
+  background: #057cb3;
+}
+
+.container .generate-btn:active {
+  background: #04699f;
+}
+
+.container .generate-btn img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 885px) {
+  body {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  body {
+    padding-left: 0;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .container h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .container h1 span {
+    border-bottom: 2px solid #058ed9;
+    text-align: center;
+    display: inline-block;
+  }
+  .display {
+    margin-top: 50px;
+    padding: 16px 10px;
+  }
+  .display input {
+    font-size: 18px;
+  }
+  .display .copy-btn {
+    height: 36px;
+    padding: 3px;
+  }
+  .display .copy-btn img {
+    width: 30px;
+  }
+  .container .generate-btn {
+    font-size: 20px;
+    padding: 6px 0;
+    width: 100%;
+  }
+  .container .generate-btn img {
+    width: 20px;
+  }
+}
